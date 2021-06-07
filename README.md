@@ -1,4 +1,4 @@
-# Edgars-Chess-Project
+# Edgar's Chess Project
 
 In order to run the program, run main.py in a python 3 environment with pygame, pyqt5, berserk and chess installed. You will notice that pyqt5 throws a couple of errors and all in all this environment is tedious to set up in conda-based python 3.8. In order to train the EdgarAI GAN model, tensorflow 2.5 is required. It is also recommended to install CUDA and cudnn (for my Windows 10 64 machine CUDA 11.2.2 and cudnn 8.1.1 worked like a charm - however, GPU supported keras will require at least 6GB of GPU RAM for this model, potentially more). Either way, training the model may easily take up to 1.5 months (yes, MONTHS) on a regular laptop without dedicated GPU, so please do it at your own risk.
 
