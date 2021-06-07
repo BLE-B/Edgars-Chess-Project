@@ -1,5 +1,8 @@
 # Edgar's Chess Project
 
+
+Chess game including state-of-the-art GUI, lichess.org game selection interface and review mechanic as well as a simple computer opponent to play against - based on a NegaMax algorithm with alpha-beta-pruning and some tweaks regarding positional awareness on the board. General Adversarial Network (GAN)-based EdgarAI implementation to follow as soon as the model has been fully trained.
+
 In order to run the program, run main.py in a python 3 environment with pygame, pyqt5, berserk and chess installed. You will notice that pyqt5 throws a couple of errors (at least when combined with Spyder 5) and all in all this environment is tedious to set up in conda-based python 3.8. In order to train the EdgarAI GAN model, tensorflow 2.5 is required. It is also recommended to install CUDA and cudnn (for my Windows 10 64 machine CUDA 11.2.2 and cudnn 8.1.1 worked like a charm - however, GPU supported keras will require at least 6GB of GPU RAM for this model, potentially more). Either way, training the model may easily take up to 1.5 months (yes, MONTHS) on a regular laptop without dedicated GPU, so please do it at your own risk.
 
 I received massive help from Eddie Sharick (unknowingly) in his YouTube tutorial series on how to program a chess game in python (as mentioned in the respective files). Also, the pandas_model file is largely not my own work. Furthermore, the GAN model is taken from Victor S (https://towardsdatascience.com/magnusgan-using-gans-to-play-like-chess-masters-9dded439bc56), which in turn is based on the pix2pix GAN model (see https://github.com/phillipi/pix2pix). I had to tweak the data processing a bit in order to fit it to my data, but the model as such isn't mine.
